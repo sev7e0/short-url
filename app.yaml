@@ -1,0 +1,21 @@
+app:
+  desc: 短链
+  version: v1.0.0
+  addr: 0.0.0.0:8080
+  configFile: ./app.yaml
+  logsAddress: ./
+  shortHost: localhost:8080/
+  # url必须为http或者https
+  defaultUrl: http://localhost:8080/default
+mysql:
+  user: root
+  password: root
+  host: localhost
+  port: 3306
+  dbName: short
+  maxConn: 100
+  maxOpen: 100
+redis:
+  addr: localhost:6379
+  password:
+  db: 7
